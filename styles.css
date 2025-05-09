@@ -67,6 +67,32 @@ h6 {
 
 /* RESETS (END) */
 
+/* SETUP (START) */
+
+:root {
+  /* color palette */
+  --primary-blue: #1e88e5;
+  --white: #ffffff;
+  --black: #000000;
+  --dark-gray: #333333;
+  --medium-gray: #666666;
+  --light-gray: #e8eff5;
+  --yellow: #ffc107;
+}
+
+/* SETUP (END) */
+
+/* GENERAL STYLES (START) */
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* GENERAL STYLES (END) */
+
 html {
   height: 100%;
 }
