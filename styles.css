@@ -73,4 +73,25 @@ html {
 
 body {
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "sidebar top-header"
+    "sidebar main-content";
+}
+
+.top-header {
+  background-color: rebeccapurple;
+  grid-area: top-header;
+}
+
+.sidebar {
+  background-color: brown;
+  grid-area: sidebar;
+}
+
+.main-content {
+  background-color: chocolate;
+  grid-area: main-content;
 }
