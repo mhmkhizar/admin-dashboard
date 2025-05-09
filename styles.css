@@ -77,13 +77,13 @@ body {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 4fr;
   grid-template-areas:
-    "sidebar top-header"
+    "sidebar main-header"
     "sidebar main-content";
 }
 
-.top-header {
+.main-header {
   background-color: rebeccapurple;
-  grid-area: top-header;
+  grid-area: main-header;
 }
 
 .sidebar {
