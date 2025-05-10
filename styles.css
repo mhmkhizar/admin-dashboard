@@ -86,7 +86,11 @@ html {
 
 /* SETUP (END) */
 
-/* GENERAL STYLES (START) */
+/* GENERAL (START) */
+
+html {
+  height: 100%;
+}
 
 body {
   font-size: 1.6rem;
@@ -94,6 +98,16 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: var(--white);
   color: var(--black);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) 5fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "sidebar main-header"
+    "sidebar main-content";
 }
 
 .icon {
@@ -138,28 +152,20 @@ body {
   color: var(--dark-gray);
 }
 
-/* GENERAL STYLES (END) */
+/* GENERAL (END) */
 
-/* SPECIFIC STYLES (START) */
-
-html {
-  height: 100%;
-}
-
-body {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: minmax(max-content, 1fr) 5fr;
-  grid-template-rows: 1fr 4fr;
-  grid-template-areas:
-    "sidebar main-header"
-    "sidebar main-content";
-}
+/* HEADER (START) */
 
 .main-header {
   grid-area: main-header;
   padding: 1.2rem 3.6rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
+
+/* HEADER (END) */
+
+/* TOP-HEADER (START) */
 
 .main-header .top-header {
   display: grid;
@@ -202,6 +208,10 @@ body {
   font-weight: bold;
 }
 
+/* TOP-HEADER (START) */
+
+/* BOTTOM-HEADER (START) */
+
 .main-header .bottom-header {
   display: grid;
   grid-template-columns: 1fr max-content;
@@ -216,13 +226,6 @@ body {
   gap: 1.6rem;
 }
 
-.bottom-header .buttons-area {
-  width: max-content;
-  display: flex;
-  gap: 2.4rem;
-  margin-left: auto;
-}
-
 .bottom-header .profile-picture {
   width: 60px;
   height: 60px;
@@ -230,7 +233,7 @@ body {
 
 .bottom-header .welcome-message,
 .bottom-header .user-name {
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .bottom-header .welcome-message {
@@ -242,6 +245,13 @@ body {
   font-size: 2.4rem;
   font-weight: bold;
 }
+
+.bottom-header .buttons-area {
+  display: flex;
+  gap: 2.4rem;
+}
+
+/* BOTTOM-HEADER (END) */
 
 .sidebar {
   grid-area: sidebar;
