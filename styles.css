@@ -145,6 +145,7 @@ body {
   border: none;
   padding: 0.4em 1.6em;
   border-radius: 999px;
+  font-weight: 500;
 }
 
 .main-content {
