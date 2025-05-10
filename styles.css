@@ -149,7 +149,7 @@ body {
 }
 
 .top-header .search-area,
-.top-header .user-info-area {
+.top-header .settings-area {
   min-height: 100%;
   display: flex;
   align-items: center;
@@ -160,7 +160,7 @@ body {
   gap: 1.6rem;
 }
 
-.top-header .user-info-area {
+.top-header .settings-area {
   justify-content: flex-end;
   gap: 2.4rem;
 }
