@@ -152,6 +152,21 @@ body {
   color: var(--dark-gray);
 }
 
+input[type="text"] {
+  background-color: var(--light-gray);
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  color: var(--dark-gray);
+  padding: 0.4rem 1.6rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+
+  box-shadow: 0 0 0 2px var(--medium-gray) inset;
+}
+
 /* GENERAL (END) */
 
 /* HEADER (START) */
@@ -188,6 +203,10 @@ body {
   min-width: 25px;
 }
 
+.top-header .search-bar {
+  width: clamp(250px, 60%, 750px);
+}
+
 .top-header .settings-area {
   width: 100%;
   min-height: 100%;
@@ -195,13 +214,6 @@ body {
   align-items: center;
   justify-content: flex-end;
   gap: 2.4rem;
-}
-
-.top-header .search-bar {
-  background-color: var(--light-gray);
-  border: none;
-  border-radius: 999px;
-  width: clamp(250px, 60%, 750px);
 }
 
 .top-header .user-name {
