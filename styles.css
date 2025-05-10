@@ -153,6 +153,10 @@ body {
   color: var(--dark-gray);
 }
 
+.sidebar .icon {
+  fill: var(--white);
+}
+
 input[type="text"] {
   background-color: var(--light-gray);
   border: none;
@@ -266,9 +270,30 @@ input[type="text"]:focus {
 
 /* BOTTOM-HEADER (END) */
 
+/* SIDEBAR (START) */
+
 .sidebar {
   grid-area: sidebar;
+  padding: 1.2rem 1.6rem 1.2rem 1.2rem;
 }
+
+.sidebar .logo-area {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.logo-area .logo-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-area .logo-heading {
+  display: inline-block;
+  font-size: 2.4rem;
+}
+
+/* SIDEBAR (END) */
 
 .main-content {
   grid-area: main-content;
