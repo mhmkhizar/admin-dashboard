@@ -91,6 +91,25 @@ body {
   color: var(--black);
 }
 
+.icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  fill: var(--black);
+  stroke: none;
+}
+
+.profile-picture {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.user-name {
+  display: inline-block;
+}
+
 /* GENERAL STYLES (END) */
 
 html {
@@ -108,8 +127,17 @@ body {
 }
 
 .main-header {
-  background-color: rebeccapurple;
   grid-area: main-header;
+}
+
+.top-header {
+  /* background-color: red; */
+}
+
+.top-header .search-bar {
+  background-color: var(--light-gray);
+  border: none;
+  border-radius: 999px;
 }
 
 .sidebar {
