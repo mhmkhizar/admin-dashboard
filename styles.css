@@ -116,6 +116,25 @@ body {
 }
 
 .main-header {
+  background-color: var(--white);
+  color: var(--dark-gray);
+}
+
+.sidebar {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.button {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 0.4em 1.6em;
+  border-radius: 999px;
+}
+
+.main-content {
+  background-color: var(--light-gray);
   color: var(--dark-gray);
 }
 
@@ -177,11 +196,9 @@ body {
 }
 
 .sidebar {
-  background-color: brown;
   grid-area: sidebar;
 }
 
 .main-content {
-  background-color: chocolate;
   grid-area: main-content;
 }
