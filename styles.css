@@ -76,8 +76,12 @@ h6 {
   --black: #000000;
   --dark-gray: #333333;
   --medium-gray: #666666;
-  --light-gray: #e8eff5;
+  --light-gray: #dddddd;
   --yellow: #ffc107;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /* SETUP (END) */
@@ -85,6 +89,7 @@ h6 {
 /* GENERAL STYLES (START) */
 
 body {
+  font-size: 1.6rem;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: var(--white);
@@ -95,7 +100,7 @@ body {
   display: inline-block;
   width: 25px;
   height: 25px;
-  fill: var(--black);
+  fill: var(--dark-gray);
   stroke: none;
 }
 
@@ -110,7 +115,13 @@ body {
   display: inline-block;
 }
 
+.main-header {
+  color: var(--dark-gray);
+}
+
 /* GENERAL STYLES (END) */
+
+/* SPECIFIC STYLES (START) */
 
 html {
   height: 100%;
@@ -128,16 +139,41 @@ body {
 
 .main-header {
   grid-area: main-header;
+  padding: 1.2rem 3.6rem;
 }
 
 .top-header {
-  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 3fr minmax(max-content, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.top-header .search-area,
+.top-header .user-info-area {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.top-header .search-area {
+  justify-content: flex-start;
+  gap: 1.6rem;
+}
+
+.top-header .user-info-area {
+  justify-content: flex-end;
+  gap: 2.4rem;
 }
 
 .top-header .search-bar {
   background-color: var(--light-gray);
   border: none;
   border-radius: 999px;
+  width: clamp(250px, 60%, 750px);
+}
+
+.top-header .user-name {
+  font-weight: bold;
 }
 
 .sidebar {
