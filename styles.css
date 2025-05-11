@@ -146,6 +146,7 @@ body {
   padding: 0.4em 1.6em;
   border-radius: 999px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .main-content {
@@ -206,6 +207,7 @@ input[type="text"]:focus {
 
 .top-header .search-icon {
   min-width: 25px;
+  cursor: pointer;
 }
 
 .top-header .search-bar {
@@ -219,6 +221,7 @@ input[type="text"]:focus {
   align-items: center;
   justify-content: flex-end;
   gap: 2.4rem;
+  cursor: pointer;
 }
 
 .top-header .user-name {
@@ -246,6 +249,7 @@ input[type="text"]:focus {
 .bottom-header .profile-picture {
   width: 60px;
   height: 60px;
+  cursor: pointer;
 }
 
 .bottom-header .welcome-message,
@@ -281,6 +285,7 @@ input[type="text"]:focus {
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  cursor: pointer;
 }
 
 .logo-area .logo-icon {
@@ -291,6 +296,31 @@ input[type="text"]:focus {
 .logo-area .logo-heading {
   display: inline-block;
   font-size: 2.4rem;
+}
+
+.sidebar .navigation-menu {
+  margin-top: 3.2rem;
+}
+
+.navigation-menu .primary-menu-list {
+  margin-bottom: 4.2rem;
+}
+
+.primary-menu-list,
+.secondary-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-left: 0.8rem;
+}
+
+.primary-menu-list > li,
+.secondary-menu-list > li {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
 }
 
 /* SIDEBAR (END) */
