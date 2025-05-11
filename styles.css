@@ -325,6 +325,47 @@ input[type="text"]:focus {
 
 /* SIDEBAR (END) */
 
+/* MAIN CONTENT (START) */
+
 .main-content {
   grid-area: main-content;
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.6rem;
+}
+
+.projects-section .project-section-heading {
+  font-size: 1.6rem;
+}
+
+.projects-section .cards-container {
+  margin-top: 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.projects-section .card {
+  background-color: var(--white);
+  padding: 2rem 1.6rem;
+  border-left: 6px solid var(--yellow);
+  border-radius: 5px;
+}
+
+.projects-section .card-info-container {
+  margin-bottom: 3.6rem;
+}
+
+.projects-section .card-icons-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.4rem;
+}
+
+.projects-section .card-heading {
+  font-size: 1.4rem;
+}
+
+.projects-section .card-text {
+  font-size: 1.328rem;
 }
