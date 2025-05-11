@@ -64,13 +64,13 @@ h6 {
 }
 
 :root {
-  --primary-blue: #1e88e5;
+  --primary-blue: #1992d4;
   --white: #ffffff;
   --black: #000000;
   --dark-gray: #333333;
   --medium-gray: #666666;
-  --light-gray: #dddddd;
-  --yellow: #ffc107;
+  --light-gray: #e2e8f0;
+  --yellow: #f0b429;
 }
 
 html {
