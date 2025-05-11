@@ -329,10 +329,11 @@ input[type="text"]:focus {
 
 .main-content {
   grid-area: main-content;
-  padding: 1.6rem;
+  padding: 2rem 1.6rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 1.6rem;
+  overflow: auto;
 }
 
 .projects-section .project-section-heading {
@@ -343,17 +344,21 @@ input[type="text"]:focus {
   margin-top: 0.6rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.6rem;
 }
 
 .projects-section .card {
   background-color: var(--white);
   padding: 2rem 1.6rem;
   border-left: 6px solid var(--yellow);
-  border-radius: 5px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
 .projects-section .card-info-container {
-  margin-bottom: 3.6rem;
+  margin-bottom: auto;
 }
 
 .projects-section .card-icons-container {
@@ -368,4 +373,5 @@ input[type="text"]:focus {
 
 .projects-section .card-text {
   font-size: 1.328rem;
+  color: var(--medium-gray);
 }
